@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="148" viewBox="0 0 520 148" role="img" aria-labelledby="title desc">
+  <title id="title">Vatana+</title>
+  <desc id="desc">Logo Vatana+ avec monogramme sportif et feuille</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="24" y1="18" x2="126" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="0.48" stop-color="#16a34a"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="162" y1="44" x2="498" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.68" stop-color="#dcfce7"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#020617" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <rect x="16" y="16" width="116" height="116" rx="30" fill="#0f172a"/>
+    <path d="M38 100C58 62 82 43 111 38C105 68 86 91 49 109C48 91 55 73 72 57C58 66 47 80 38 100Z" fill="url(#markGradient)"/>
+    <path d="M48 106C70 92 89 72 108 41" fill="none" stroke="#bbf7d0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M45 48H74L91 89L112 48" fill="none" stroke="#f8fafc" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="98" cy="39" r="10" fill="#86efac"/>
+  </g>
+
+  <g fill="url(#textGradient)">
+    <path d="M163.7 44H184.1L203.1 99.6L222.2 44H242.1L214.4 116H191.3L163.7 44Z"/>
+    <path d="M271.3 44H292.6L320.7 116H299.7L295.1 102.9H267.6L263.1 116H242.6L271.3 44ZM281.5 62.2L272.6 88.5H290.3L281.5 62.2Z"/>
+    <path d="M317.6 44H379.6V60.2H358.6V116H338.4V60.2H317.6V44Z"/>
+    <path d="M407.3 44H428.6L456.7 116H435.7L431.1 102.9H403.6L399.1 116H378.6L407.3 44ZM417.5 62.2L408.6 88.5H426.3L417.5 62.2Z"/>
+    <path d="M463.6 44H482.7L505.3 80.2V44H524.4V116H505.3L482.7 79.9V116H463.6V44Z" transform="translate(-23 0)"/>
+  </g>
+
+  <g fill="#22c55e">
+    <rect x="486" y="64" width="12" height="52" rx="6"/>
+    <rect x="466" y="84" width="52" height="12" rx="6"/>
+  </g>
+</svg>

@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.vatana-dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f4f7fb;
+  text-rendering: geometricPrecision;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgb(34 197 94 / 0.12), transparent 32rem),
+    linear-gradient(135deg, #f8fafc 0%, #eef4f8 48%, #f6fbf8 100%);
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: rgb(34 197 94 / 0.22);
+  color: #052e16;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.vatana-dark body {
+  background:
+    radial-gradient(circle at top left, rgb(34 197 94 / 0.14), transparent 30rem),
+    radial-gradient(circle at bottom right, rgb(14 165 233 / 0.12), transparent 34rem),
+    #020617;
+}
+
+.vatana-dark .bg-white {
+  background-color: #0f172a !important;
+}
+
+.vatana-dark .bg-white\/95 {
+  background-color: rgb(15 23 42 / 0.95) !important;
+}
+
+.vatana-dark .bg-white\/90 {
+  background-color: rgb(15 23 42 / 0.9) !important;
+}
+
+.vatana-dark .bg-gray-100,
+.vatana-dark .bg-gray-50 {
+  background-color: #0f172a !important;
+}
+
+.vatana-dark .bg-slate-100 {
+  background-color: #1f2937 !important;
+}
+
+.vatana-dark .border-gray-200 {
+  border-color: #334155 !important;
+}
+
+.vatana-dark .border-gray-100 {
+  border-color: #1e293b !important;
+}
+
+.vatana-dark .text-slate-950,
+.vatana-dark .text-slate-900,
+.vatana-dark .text-slate-800,
+.vatana-dark .text-slate-700 {
+  color: #f8fafc !important;
+}
+
+.vatana-dark .text-gray-500,
+.vatana-dark .text-gray-400 {
+  color: #cbd5e1 !important;
+}
+
+.vatana-dark .shadow-slate-200\/60,
+.vatana-dark .shadow-slate-200\/70 {
+  --tw-shadow-color: rgb(2 6 23 / 0.45) !important;
+}
+
+.vatana-dark input,
+.vatana-dark select,
+.vatana-dark textarea {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+.vatana-dark input::placeholder {
+  color: #94a3b8 !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hover-lift {
+    transition:
+      transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+}
