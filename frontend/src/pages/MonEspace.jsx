@@ -53,6 +53,269 @@ const langues = {
   },
 };
 
+const textes = {
+  fr: {
+    loading: "Chargement...",
+    preferenceSaved: "Préférence enregistrée.",
+    loadError: "Impossible de charger votre espace sportif.",
+    finishError: "Impossible de terminer cet exercice pour le moment.",
+    completedMessage: "{name} marqué comme terminé.",
+    heroEyebrow: "Espace sportif",
+    hello: "Bonjour",
+    heroDescription:
+      "Suivez votre programme, terminez vos exercices du jour et gardez votre progression à jour.",
+    logout: "Déconnexion",
+    tabs: {
+      dashboard: "Dashboard",
+      seance: "Séance",
+      calendrier: "Calendrier",
+      messages: "Messages",
+      parametres: "Paramètres",
+    },
+    stats: {
+      todayProgress: "Progression du jour",
+      exercises: "Exercices",
+      completedToday: "{count} terminés aujourd'hui",
+      totalDuration: "Durée totale",
+      plannedMinutes: "minutes prévues",
+      completedSessions: "Séances réalisées",
+      fullHistory: "historique complet",
+    },
+    program: {
+      current: "Programme actuel",
+      objective: "Objectif",
+      level: "Niveau",
+      nextExercise: "Prochain exercice",
+      allDone: "Tout est terminé",
+      startSession: "Démarrer la séance",
+    },
+    calendar: {
+      title: "Calendrier de la semaine",
+      description: "Vue claire de vos séances prévues et terminées.",
+      exercise: "exercice",
+      exercises: "exercices",
+      completed: "terminés",
+    },
+    settings: {
+      athleteProfile: "Profil sportif",
+      preferences: "Préférences",
+      preferencesDesc: "Paramètres simples pour votre expérience mobile.",
+      appearance: "Apparence",
+      appearanceDesc: "Choisissez le mode clair ou sombre.",
+      lightMode: "Mode clair",
+      lightModeDesc: "Interface lumineuse",
+      darkMode: "Mode sombre",
+      darkModeDesc: "Confort le soir",
+      language: "Langue",
+      languageDesc: "Sélectionnez la langue de l'application.",
+      sessionNotifications: "Notifications séance",
+      sessionNotificationsDesc: "Recevoir un rappel avant l'entraînement.",
+      focusMode: "Mode concentration",
+      focusModeDesc: "Interface plus calme pendant le timer.",
+    },
+    exercise: {
+      today: "Aujourd'hui",
+      completed: "terminés",
+      sets: "séries",
+      reps: "répétitions",
+      done: "Terminé",
+      validating: "Validation...",
+      finish: "Finir",
+      resume: "Reprendre",
+      pause: "Pause",
+      reset: "Reset",
+      start: "Démarrer",
+    },
+    empty: {
+      title: "Aucun programme affecté.",
+      description: "Votre coach doit encore vous attribuer un programme.",
+    },
+  },
+  en: {
+    loading: "Loading...",
+    preferenceSaved: "Preference saved.",
+    loadError: "Unable to load your athlete area.",
+    finishError: "Unable to complete this exercise right now.",
+    completedMessage: "{name} marked as completed.",
+    heroEyebrow: "Athlete area",
+    hello: "Hello",
+    heroDescription:
+      "Follow your program, complete today's exercises, and keep your progress up to date.",
+    logout: "Sign out",
+    tabs: {
+      dashboard: "Dashboard",
+      seance: "Workout",
+      calendrier: "Calendar",
+      messages: "Messages",
+      parametres: "Settings",
+    },
+    stats: {
+      todayProgress: "Today's progress",
+      exercises: "Exercises",
+      completedToday: "{count} completed today",
+      totalDuration: "Total duration",
+      plannedMinutes: "planned minutes",
+      completedSessions: "Completed sessions",
+      fullHistory: "full history",
+    },
+    program: {
+      current: "Current program",
+      objective: "Goal",
+      level: "Level",
+      nextExercise: "Next exercise",
+      allDone: "Everything is done",
+      startSession: "Start workout",
+    },
+    calendar: {
+      title: "Weekly calendar",
+      description: "A clear view of your planned and completed sessions.",
+      exercise: "exercise",
+      exercises: "exercises",
+      completed: "completed",
+    },
+    settings: {
+      athleteProfile: "Athlete profile",
+      preferences: "Preferences",
+      preferencesDesc: "Simple settings for your mobile experience.",
+      appearance: "Appearance",
+      appearanceDesc: "Choose light or dark mode.",
+      lightMode: "Light mode",
+      lightModeDesc: "Bright interface",
+      darkMode: "Dark mode",
+      darkModeDesc: "Evening comfort",
+      language: "Language",
+      languageDesc: "Select the app language.",
+      sessionNotifications: "Workout notifications",
+      sessionNotificationsDesc: "Receive a reminder before training.",
+      focusMode: "Focus mode",
+      focusModeDesc: "A calmer interface while the timer runs.",
+    },
+    exercise: {
+      today: "Today",
+      completed: "completed",
+      sets: "sets",
+      reps: "reps",
+      done: "Done",
+      validating: "Saving...",
+      finish: "Finish",
+      resume: "Resume",
+      pause: "Pause",
+      reset: "Reset",
+      start: "Start",
+    },
+    empty: {
+      title: "No program assigned.",
+      description: "Your coach still needs to assign you a program.",
+    },
+  },
+  mg: {
+    loading: "Mampiditra...",
+    preferenceSaved: "Voatahiry ny safidy.",
+    loadError: "Tsy afaka mampiditra ny espace sportif-nao.",
+    finishError: "Tsy afaka mamita ity fanazaran-tena ity izao.",
+    completedMessage: "{name} voamarika ho vita.",
+    heroEyebrow: "Espace sportif",
+    hello: "Manao ahoana",
+    heroDescription:
+      "Araho ny programanao, vitaho ny fanazaran-tena androany, ary havaozy ny fandrosoanao.",
+    logout: "Hivoaka",
+    tabs: {
+      dashboard: "Dashboard",
+      seance: "Seance",
+      calendrier: "Kalandrie",
+      messages: "Hafatra",
+      parametres: "Kirakira",
+    },
+    stats: {
+      todayProgress: "Fandrosoana androany",
+      exercises: "Fanazaran-tena",
+      completedToday: "{count} vita androany",
+      totalDuration: "Faharetana manontolo",
+      plannedMinutes: "minitra voaomana",
+      completedSessions: "Seance vita",
+      fullHistory: "tantara feno",
+    },
+    program: {
+      current: "Programa ankehitriny",
+      objective: "Tanjona",
+      level: "Ambaratonga",
+      nextExercise: "Fanazaran-tena manaraka",
+      allDone: "Vita daholo",
+      startSession: "Atombohy ny seance",
+    },
+    calendar: {
+      title: "Kalandrie isan-kerinandro",
+      description: "Fijery mazava ny seance voaomana sy vita.",
+      exercise: "fanazaran-tena",
+      exercises: "fanazaran-tena",
+      completed: "vita",
+    },
+    settings: {
+      athleteProfile: "Profil sportif",
+      preferences: "Safidy",
+      preferencesDesc: "Kirakira tsotra ho an'ny traikefa mobile.",
+      appearance: "Endrika",
+      appearanceDesc: "Safidio ny mode mazava na maizina.",
+      lightMode: "Mode mazava",
+      lightModeDesc: "Interface mazava",
+      darkMode: "Mode maizina",
+      darkModeDesc: "Mahazo aina amin'ny alina",
+      language: "Fiteny",
+      languageDesc: "Safidio ny fitenin'ny application.",
+      sessionNotifications: "Fampandrenesana seance",
+      sessionNotificationsDesc: "Mahazoa fampahatsiahivana alohan'ny fanazaran-tena.",
+      focusMode: "Mode concentration",
+      focusModeDesc: "Interface milamina kokoa mandritra ny timer.",
+    },
+    exercise: {
+      today: "Androany",
+      completed: "vita",
+      sets: "serie",
+      reps: "repetition",
+      done: "Vita",
+      validating: "Manamarina...",
+      finish: "Vitao",
+      resume: "Tohizo",
+      pause: "Pause",
+      reset: "Reset",
+      start: "Atombohy",
+    },
+    empty: {
+      title: "Tsy mbola misy programa nomena.",
+      description: "Mbola mila manome programa anao ny coach.",
+    },
+  },
+};
+
+const nomsJours = {
+  en: {
+    Lundi: "Monday",
+    Mardi: "Tuesday",
+    Mercredi: "Wednesday",
+    Jeudi: "Thursday",
+    Vendredi: "Friday",
+    Samedi: "Saturday",
+    Dimanche: "Sunday",
+  },
+  mg: {
+    Lundi: "Alatsinainy",
+    Mardi: "Talata",
+    Mercredi: "Alarobia",
+    Jeudi: "Alakamisy",
+    Vendredi: "Zoma",
+    Samedi: "Sabotsy",
+    Dimanche: "Alahady",
+  },
+};
+
+function getTextes(langue) {
+  return textes[langue] || textes.fr;
+}
+
+function traduireJour(jour, langue) {
+  return nomsJours[langue]?.[jour] || jour;
+}
+
 function lirePreferences() {
   try {
     return {
@@ -104,6 +367,7 @@ function MonEspace() {
   const [succes, setSucces] = useState("");
   const [erreur, setErreur] = useState("");
   const [messagesNonLus, setMessagesNonLus] = useState(0);
+  const t = getTextes(preferences.langue);
 
   const chargerSeances = useCallback(async () => {
     if (!utilisateur.id) {
@@ -134,7 +398,7 @@ function MonEspace() {
       setSeances(seancesResponse.data);
     } catch (error) {
       console.log(error);
-      setErreur("Impossible de charger votre espace sportif.");
+      setErreur(getTextes(lirePreferences().langue).loadError);
     } finally {
       setChargement(false);
     }
@@ -243,7 +507,7 @@ function MonEspace() {
 
       return nouvellesPreferences;
     });
-    setSucces("Préférence enregistrée.");
+    setSucces(getTextes(valeur && cle === "langue" ? valeur : preferences.langue).preferenceSaved);
   };
 
   // Les séances terminées aujourd'hui permettent de désactiver le bouton exercice par exercice.
@@ -306,11 +570,11 @@ function MonEspace() {
     };
   });
   const onglets = [
-    { id: "dashboard", label: "Dashboard", icon: <FiHome /> },
-    { id: "seance", label: "Séance", icon: <FiList /> },
-    { id: "calendrier", label: "Calendrier", icon: <FiCalendar /> },
-    { id: "messages", label: "Messages", icon: <FiMessageSquare /> },
-    { id: "parametres", label: "Paramètres", icon: <FiSettings /> },
+    { id: "dashboard", label: t.tabs.dashboard, icon: <FiHome /> },
+    { id: "seance", label: t.tabs.seance, icon: <FiList /> },
+    { id: "calendrier", label: t.tabs.calendrier, icon: <FiCalendar /> },
+    { id: "messages", label: t.tabs.messages, icon: <FiMessageSquare /> },
+    { id: "parametres", label: t.tabs.parametres, icon: <FiSettings /> },
   ];
 
   const demarrerExercice = (exercice) => {
@@ -354,10 +618,10 @@ function MonEspace() {
 
       await chargerSeances();
       demarrerProchainExercice(exercice.id);
-      setSucces(`${exercice.nom_exercice} marqué comme terminé.`);
+      setSucces(t.completedMessage.replace("{name}", exercice.nom_exercice));
     } catch (error) {
       console.log(error);
-      setErreur("Impossible de terminer cet exercice pour le moment.");
+      setErreur(t.finishError);
     } finally {
       setExerciceEnCours(null);
     }
@@ -370,7 +634,7 @@ function MonEspace() {
           <div className="mx-auto mb-4 h-2 w-48 overflow-hidden rounded-full bg-gray-100">
             <div className="h-full w-1/2 animate-pulse rounded-full bg-green-600" />
           </div>
-          <p className="font-semibold text-slate-900">Chargement...</p>
+          <p className="font-semibold text-slate-900">{t.loading}</p>
         </div>
       </div>
     );
@@ -398,14 +662,13 @@ function MonEspace() {
         <div className="relative flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-green-300">
-              Espace sportif
+              {t.heroEyebrow}
             </p>
             <h1 className="mt-3 text-3xl font-bold">
-              Bonjour {utilisateur.nom} {utilisateur.prenom}
+              {t.hello} {utilisateur.nom} {utilisateur.prenom}
             </h1>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-300">
-              Suivez votre programme, terminez vos exercices du jour et gardez
-              votre progression à jour.
+              {t.heroDescription}
             </p>
           </div>
 
@@ -414,7 +677,7 @@ function MonEspace() {
             className="inline-flex w-fit items-center justify-center gap-2 rounded-lg border border-red-400/30 bg-red-500/10 px-4 py-3 font-semibold text-red-200 shadow-lg shadow-red-950/20 transition hover:-translate-y-0.5 hover:bg-red-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-300"
           >
             <FiLogOut />
-            Déconnexion
+            {t.logout}
           </button>
         </div>
       </header>
@@ -459,7 +722,7 @@ function MonEspace() {
               <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
                 <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-lg shadow-slate-200/50">
                   <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                    Progression du jour
+                    {t.stats.todayProgress}
                   </p>
                   <p className="mt-2 text-4xl font-black text-slate-950">
                     {progressionAujourdhui}%
@@ -474,35 +737,40 @@ function MonEspace() {
 
                 <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-lg shadow-slate-200/50">
                   <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                    Exercices
+                    {t.stats.exercises}
                   </p>
                   <p className="mt-2 text-4xl font-black text-slate-950">
                     {exercices.length}
                   </p>
                   <p className="mt-3 text-sm text-gray-500">
-                    {totalTerminesAujourdhui} terminés aujourd'hui
+                    {t.stats.completedToday.replace(
+                      "{count}",
+                      totalTerminesAujourdhui
+                    )}
                   </p>
                 </div>
 
                 <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-lg shadow-slate-200/50">
                   <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                    Durée totale
+                    {t.stats.totalDuration}
                   </p>
                   <p className="mt-2 text-4xl font-black text-slate-950">
                     {totalMinutesProgramme}
                   </p>
-                  <p className="mt-3 text-sm text-gray-500">minutes prévues</p>
+                  <p className="mt-3 text-sm text-gray-500">
+                    {t.stats.plannedMinutes}
+                  </p>
                 </div>
 
                 <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-lg shadow-slate-200/50">
                   <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                    Séances réalisées
+                    {t.stats.completedSessions}
                   </p>
                   <p className="mt-2 text-4xl font-black text-slate-950">
                     {seances.length}
                   </p>
                   <p className="mt-3 text-sm text-gray-500">
-                    historique complet
+                    {t.stats.fullHistory}
                   </p>
                 </div>
               </section>
@@ -516,17 +784,17 @@ function MonEspace() {
                     </div>
                     <div>
                       <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                        Programme actuel
+                        {t.program.current}
                       </p>
                       <h2 className="mt-2 text-2xl font-bold text-slate-950">
                         {programme.nom_programme}
                       </h2>
                       <div className="mt-3 flex flex-wrap gap-2">
                         <span className="rounded-full bg-green-50 px-3 py-1 text-sm font-semibold text-green-700">
-                          Objectif : {programme.objectif}
+                          {t.program.objective} : {programme.objectif}
                         </span>
                         <span className="rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">
-                          Niveau : {programme.niveau}
+                          {t.program.level} : {programme.niveau}
                         </span>
                       </div>
                     </div>
@@ -540,10 +808,10 @@ function MonEspace() {
                     </div>
                     <div>
                       <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                        Prochain exercice
+                        {t.program.nextExercise}
                       </p>
                       <h3 className="mt-1 font-bold text-slate-950">
-                        {prochainExercice?.nom_exercice || "Tout est terminé"}
+                        {prochainExercice?.nom_exercice || t.program.allDone}
                       </h3>
                     </div>
                   </div>
@@ -557,7 +825,7 @@ function MonEspace() {
                       className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-green-600 px-5 py-3 font-bold text-white shadow-lg shadow-green-200 transition hover:-translate-y-0.5 hover:bg-green-700"
                     >
                       <FiPlay />
-                      Démarrer la séance
+                      {t.program.startSession}
                     </button>
                   )}
                 </div>
@@ -573,10 +841,10 @@ function MonEspace() {
                 </div>
                 <div>
                   <h2 className="text-xl font-bold text-slate-950">
-                    Calendrier de la semaine
+                    {t.calendar.title}
                   </h2>
                   <p className="text-sm text-gray-500">
-                    Vue claire de vos séances prévues et terminées.
+                    {t.calendar.description}
                   </p>
                 </div>
               </div>
@@ -591,9 +859,14 @@ function MonEspace() {
                         : "border-gray-200 bg-gray-50"
                     }`}
                   >
-                    <p className="font-bold text-slate-950">{jour.jour}</p>
+                    <p className="font-bold text-slate-950">
+                      {traduireJour(jour.jour, preferences.langue)}
+                    </p>
                     <p className="mt-1 text-sm text-gray-500">
-                      {jour.total} exercice{jour.total > 1 ? "s" : ""}
+                      {jour.total}{" "}
+                      {jour.total > 1
+                        ? t.calendar.exercises
+                        : t.calendar.exercise}
                     </p>
                     <div className="mt-4 h-2 rounded-full bg-white">
                       <div
@@ -608,7 +881,7 @@ function MonEspace() {
                       />
                     </div>
                     <p className="mt-3 text-xs font-semibold text-slate-600">
-                      {jour.termines}/{jour.total} terminés
+                      {jour.termines}/{jour.total} {t.calendar.completed}
                     </p>
                   </div>
                 ))}
@@ -625,7 +898,7 @@ function MonEspace() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                      Profil sportif
+                      {t.settings.athleteProfile}
                     </p>
                     <h2 className="text-xl font-bold text-slate-950">
                       {utilisateur.nom} {utilisateur.prenom}
@@ -637,7 +910,7 @@ function MonEspace() {
                   className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-red-200 bg-red-50 px-4 py-3 font-bold text-red-700 transition hover:bg-red-100"
                 >
                   <FiLogOut />
-                  Déconnexion
+                  {t.logout}
                 </button>
               </div>
 
@@ -648,10 +921,10 @@ function MonEspace() {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold text-slate-950">
-                      Préférences
+                      {t.settings.preferences}
                     </h2>
                     <p className="text-sm text-gray-500">
-                      Paramètres simples pour votre expérience mobile.
+                      {t.settings.preferencesDesc}
                     </p>
                   </div>
                 </div>
@@ -663,9 +936,11 @@ function MonEspace() {
                         <FiMoon />
                       </div>
                       <div>
-                        <p className="font-bold text-slate-950">Apparence</p>
+                        <p className="font-bold text-slate-950">
+                          {t.settings.appearance}
+                        </p>
                         <p className="text-sm text-gray-500">
-                          Choisissez le mode clair ou sombre.
+                          {t.settings.appearanceDesc}
                         </p>
                       </div>
                     </div>
@@ -682,9 +957,11 @@ function MonEspace() {
                       >
                         <FiSun className="text-xl" />
                         <span>
-                          <span className="block font-bold">Mode clair</span>
+                          <span className="block font-bold">
+                            {t.settings.lightMode}
+                          </span>
                           <span className="text-sm opacity-75">
-                            Interface lumineuse
+                            {t.settings.lightModeDesc}
                           </span>
                         </span>
                       </button>
@@ -700,9 +977,11 @@ function MonEspace() {
                       >
                         <FiMoon className="text-xl" />
                         <span>
-                          <span className="block font-bold">Mode sombre</span>
+                          <span className="block font-bold">
+                            {t.settings.darkMode}
+                          </span>
                           <span className="text-sm opacity-75">
-                            Confort le soir
+                            {t.settings.darkModeDesc}
                           </span>
                         </span>
                       </button>
@@ -715,9 +994,11 @@ function MonEspace() {
                         <FiGlobe />
                       </div>
                       <div>
-                        <p className="font-bold text-slate-950">Langue</p>
+                        <p className="font-bold text-slate-950">
+                          {t.settings.language}
+                        </p>
                         <p className="text-sm text-gray-500">
-                          Sélectionnez la langue de l'application.
+                          {t.settings.languageDesc}
                         </p>
                       </div>
                     </div>
@@ -746,10 +1027,10 @@ function MonEspace() {
                   <label className="flex items-center justify-between rounded-lg border border-gray-200 p-4">
                     <span>
                       <span className="block font-semibold text-slate-900">
-                        Notifications séance
+                        {t.settings.sessionNotifications}
                       </span>
                       <span className="text-sm text-gray-500">
-                        Recevoir un rappel avant l'entraînement.
+                        {t.settings.sessionNotificationsDesc}
                       </span>
                     </span>
                     <input
@@ -767,10 +1048,10 @@ function MonEspace() {
                   <label className="flex items-center justify-between rounded-lg border border-gray-200 p-4">
                     <span>
                       <span className="block font-semibold text-slate-900">
-                        Mode concentration
+                        {t.settings.focusMode}
                       </span>
                       <span className="text-sm text-gray-500">
-                        Interface plus calme pendant le timer.
+                        {t.settings.focusModeDesc}
                       </span>
                     </span>
                     <input
@@ -801,17 +1082,17 @@ function MonEspace() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                    Programme actuel
+                    {t.program.current}
                   </p>
                   <h2 className="mt-2 text-2xl font-bold text-slate-950">
                     {programme.nom_programme}
                   </h2>
                   <div className="mt-3 flex flex-wrap gap-2">
                     <span className="rounded-full bg-green-50 px-3 py-1 text-sm font-semibold text-green-700">
-                      Objectif : {programme.objectif}
+                      {t.program.objective} : {programme.objectif}
                     </span>
                     <span className="rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">
-                      Niveau : {programme.niveau}
+                      {t.program.level} : {programme.niveau}
                     </span>
                   </div>
                 </div>
@@ -823,7 +1104,7 @@ function MonEspace() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                    Aujourd'hui
+                    {t.exercise.today}
                   </p>
                   <p className="mt-2 text-3xl font-black text-slate-950">
                     {progressionAujourdhui}%
@@ -840,8 +1121,8 @@ function MonEspace() {
                 />
               </div>
               <p className="mt-3 text-sm text-gray-500">
-                {totalTerminesAujourdhui} / {exercices.length} exercices
-                terminés
+                {totalTerminesAujourdhui} / {exercices.length}{" "}
+                {t.calendar.exercises} {t.exercise.completed}
               </p>
             </div>
           </section>
@@ -858,10 +1139,13 @@ function MonEspace() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-950">
-                      {jour}
+                      {traduireJour(jour, preferences.langue)}
                     </h3>
                     <p className="text-sm text-gray-500">
-                      {liste.length} exercice{liste.length > 1 ? "s" : ""}
+                      {liste.length}{" "}
+                      {liste.length > 1
+                        ? t.calendar.exercises
+                        : t.calendar.exercise}
                     </p>
                   </div>
                 </div>
@@ -897,10 +1181,10 @@ function MonEspace() {
                           </h4>
                         <div className="mt-2 flex flex-wrap gap-2 text-sm">
                           <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 font-semibold text-slate-700">
-                            {exercice.series} séries
+                            {exercice.series} {t.exercise.sets}
                           </span>
                           <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 font-semibold text-slate-700">
-                            {exercice.repetitions} répétitions
+                            {exercice.repetitions} {t.exercise.reps}
                           </span>
                           <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 font-semibold text-slate-700">
                             <FiClock />
@@ -914,7 +1198,7 @@ function MonEspace() {
                         {termine ? (
                           <span className="inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-green-50 px-4 py-2.5 font-bold text-green-700 ring-1 ring-green-100">
                             <FiCheckCircle />
-                            Terminé
+                            {t.exercise.done}
                           </span>
                         ) : (
                           <>
@@ -941,7 +1225,9 @@ function MonEspace() {
                                     className="inline-flex items-center justify-center gap-2 rounded-lg bg-green-600 px-5 py-3 font-bold text-white shadow-lg shadow-green-200 transition hover:-translate-y-0.5 hover:bg-green-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
                                   >
                                     <FiCheckCircle />
-                                    {enCours ? "Validation..." : "Finir"}
+                                    {enCours
+                                      ? t.exercise.validating
+                                      : t.exercise.finish}
                                   </button>
                                 ) : (
                                   <button
@@ -952,7 +1238,9 @@ function MonEspace() {
                                     className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 font-bold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-green-200 hover:bg-green-50 hover:text-green-700"
                                   >
                                     {timerEnPause ? <FiPlay /> : <FiPause />}
-                                    {timerEnPause ? "Reprendre" : "Pause"}
+                                    {timerEnPause
+                                      ? t.exercise.resume
+                                      : t.exercise.pause}
                                   </button>
                                 )}
 
@@ -962,7 +1250,7 @@ function MonEspace() {
                                   className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 font-bold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700"
                                 >
                                   <FiRotateCcw />
-                                  Reset
+                                  {t.exercise.reset}
                                 </button>
                               </div>
                             ) : (
@@ -973,7 +1261,7 @@ function MonEspace() {
                                 className="inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-green-600 px-5 py-3 font-bold text-white shadow-lg shadow-green-200 transition hover:-translate-y-0.5 hover:bg-green-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
                               >
                                 <FiPlay />
-                                Démarrer
+                                {t.exercise.start}
                               </button>
                             )}
                           </>
@@ -991,10 +1279,10 @@ function MonEspace() {
       ) : (
         <div className="rounded-lg bg-white p-6 text-center shadow-sm ring-1 ring-gray-200">
           <p className="font-semibold text-slate-950">
-            Aucun programme affecté.
+            {t.empty.title}
           </p>
           <p className="mt-1 text-sm text-gray-500">
-            Votre coach doit encore vous attribuer un programme.
+            {t.empty.description}
           </p>
         </div>
       )}

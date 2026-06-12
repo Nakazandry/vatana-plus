@@ -118,10 +118,22 @@ function Parametres() {
   }, [preferences.theme]);
 
   const modifierPreference = (cle, valeur) => {
-    setPreferences((preferencesActuelles) => ({
-      ...preferencesActuelles,
-      [cle]: valeur,
-    }));
+    setPreferences((preferencesActuelles) => {
+      const nouvellesPreferences = {
+        ...preferencesActuelles,
+        [cle]: valeur,
+      };
+
+      if (cle === "langue") {
+        localStorage.setItem(
+          "vatanaPreferences",
+          JSON.stringify(nouvellesPreferences)
+        );
+        window.dispatchEvent(new Event("vatana-preferences-change"));
+      }
+
+      return nouvellesPreferences;
+    });
     setSauvegarde(false);
   };
 

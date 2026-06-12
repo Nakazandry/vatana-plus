@@ -49,9 +49,15 @@ function Sidebar({ langue = "fr" }) {
           alt="Vatana+"
           className="h-10 w-auto object-contain drop-shadow lg:h-12"
         />
-        <span className="hidden rounded-full border border-green-400/20 bg-green-400/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-green-200 sm:inline-flex lg:hidden">
-          Admin
-        </span>
+        <button
+          type="button"
+          onClick={deconnexion}
+          className="inline-flex items-center justify-center gap-2 rounded-lg border border-red-400/25 bg-red-500/10 px-3 py-2 text-xs font-bold text-red-200 transition hover:border-red-300/40 hover:bg-red-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-300 lg:hidden"
+          aria-label={t.nav.deconnexion}
+        >
+          <FiLogOut className="text-base" />
+          <span>{t.nav.deconnexion}</span>
+        </button>
       </div>
 
       <nav className="relative -mx-1 flex gap-2 overflow-x-auto px-1 pb-1 lg:mx-0 lg:flex-1 lg:flex-col lg:gap-1.5 lg:overflow-y-auto lg:overflow-x-hidden lg:pr-1">
