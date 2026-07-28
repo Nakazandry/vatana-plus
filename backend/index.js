@@ -22,6 +22,19 @@ const allowedOrigins = (process.env.CORS_ALLOWED_ORIGINS ||
   .map((origin) => origin.trim())
   .filter(Boolean);
 
+function isVatanaVercelDeployment(origin) {
+  try {
+    const { protocol, hostname } = new URL(origin);
+    return (
+      protocol === "https:" &&
+      hostname.startsWith("vatana-plus-") &&
+      hostname.endsWith(".vercel.app")
+    );
+  } catch {
+    return false;
+  }
+}
+
 app.disable("x-powered-by");
 app.use((req, res, next) => {
   res.setHeader("X-Content-Type-Options", "nosniff");
@@ -41,7 +54,11 @@ app.use((req, res, next) => {
 app.use(cors({
   origin(origin, callback) {
     // Les requêtes sans Origin (health checks, curl, serveur-à-serveur) restent admises.
-    if (!origin || allowedOrigins.includes(origin)) {
+    if (
+      !origin ||
+      allowedOrigins.includes(origin) ||
+      isVatanaVercelDeployment(origin)
+    ) {
       return callback(null, true);
     }
 
