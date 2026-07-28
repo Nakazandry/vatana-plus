@@ -16,8 +16,41 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 const seanceRoutes = require("./routes/seanceRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 
+const allowedOrigins = (process.env.CORS_ALLOWED_ORIGINS ||
+  "https://vatana-plus.vercel.app,http://localhost:5173")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
-app.use(cors());
+app.disable("x-powered-by");
+app.use((req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+
+  if (process.env.NODE_ENV === "production") {
+    res.setHeader(
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains"
+    );
+  }
+
+  next();
+});
+app.use(cors({
+  origin(origin, callback) {
+    // Les requêtes sans Origin (health checks, curl, serveur-à-serveur) restent admises.
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    return callback(new Error("Origine non autorisée par CORS"));
+  },
+  credentials: true,
+  methods: ["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
