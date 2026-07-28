@@ -16,25 +16,6 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 const seanceRoutes = require("./routes/seanceRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 
-const allowedOrigins = (process.env.CORS_ALLOWED_ORIGINS ||
-  "https://vatana-plus.vercel.app,http://localhost:5173")
-  .split(",")
-  .map((origin) => origin.trim())
-  .filter(Boolean);
-
-function isVatanaVercelDeployment(origin) {
-  try {
-    const { protocol, hostname } = new URL(origin);
-    return (
-      protocol === "https:" &&
-      hostname.startsWith("vatana-plus-") &&
-      hostname.endsWith(".vercel.app")
-    );
-  } catch {
-    return false;
-  }
-}
-
 app.disable("x-powered-by");
 app.use((req, res, next) => {
   res.setHeader("X-Content-Type-Options", "nosniff");
@@ -51,23 +32,9 @@ app.use((req, res, next) => {
 
   next();
 });
-app.use(cors({
-  origin(origin, callback) {
-    // Les requêtes sans Origin (health checks, curl, serveur-à-serveur) restent admises.
-    if (
-      !origin ||
-      allowedOrigins.includes(origin) ||
-      isVatanaVercelDeployment(origin)
-    ) {
-      return callback(null, true);
-    }
-
-    return callback(new Error("Origine non autorisée par CORS"));
-  },
-  credentials: true,
-  methods: ["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
+// Temporary compatibility setting: accepts requests from the current Vercel URL.
+// Restore the origin allowlist before the next production release.
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
